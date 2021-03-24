@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- 
+	Rachel Ahn 
+	ITEC 231.400 
+	Brown 
+	Term Project: Form page 
+	-->
+	<title>Feedback</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="AhnMyStyle.css">
+	<style>
+		form {
+			font-family: Verdana, Arial, sans-serif;
+			font-weight: bold;
+			font-size: 80%;
+			padding-left: 30px;
+			padding-bottom: 30px;
+			max-width: 90%;
+		}
+		fieldset {
+			border: 2px dashed #eaeaea;
+			max-width: 100%;
+		}
+		textarea {
+		
+		}
+	</style>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>   
+	<![endif]--> 
+	
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Benefitting from Smartphones</h1>
+			<span><i>An Opinion</i></span>
+		</header>
+		<div id="demo"> <!-- flex container -->
+			<nav role="navigation">
+				<ul>
+					<li><a href="AhnHome.html">Home</a></li>
+					<li><a href="AhnEducation.html">Education</a></li>
+					<li><a href="AhnBusiness.html">Business</a>
+						<ul id="sublevel">
+							<li><a href="AhnBusinessApps.html"><small>></small> Different Apps</a></li>
+						</ul>
+					</li>
+					<li><a href="AhnLifestyle.html">Lifestyle</a></li>
+					<li><a href="AhnCommunication.html">Communication</a></li>
+					<li><a href="AhnForm.html">Feedback</a></li>
+				 </ul>
+			</nav>
+			<main role="main">
+				<h2>Comments/Feedback</h2>
+				<form id="myFeedback" method="post" action="http://webdevbasics.net/scripts/demo.php">
+					<label for="myName"><small>*</small>Name: </label><input type="text" name="myName" id="myName" required="required" 
+					placeholder="your first and last name">
+					<br><br>
+					<label for="myEmail"><small>*</small>E-mail: </label><input type="email" name="myEmail" id="myEmail" required="required" 
+					placeholder="you@yourdomain.com">
+					<br><br><br>
+					<fieldset>
+						<legend>What did you enjoy?</legend>
+						<input type="checkbox" name="choice" value="pop"> Colors<br>
+						<input type="checkbox" name="choice" value="classical"> Layout<br>
+						<input type="checkbox" name="choice" value="rock"> Media content<br>
+						<input type="checkbox" name="choice" value="folk"> Written Content<br>
+						<input type="checkbox" name="choice" value="rap"> Font<br>
+					</fieldset>
+					<br>
+					<fieldset>
+						<legend>What did you enjoy the least?</legend>
+						<input type="radio" name="choice" value="pop"> Colors used<br>
+						<input type="radio" name="choice" value="classical"> Layout<br>
+						<input type="radio" name="choice" value="rock"> Media content<br>
+						<input type="radio" name="choice" value="folk"> Written Content<br>
+						<input type="radio" name="choice" value="rap"> Font<br>
+					</fieldset>
+					<br>
+					<fieldset>
+						<legend>What should I add more of?</legend>
+						<select size="1" name="favbrowser" id="favbrowser">
+							<option>Select one...</option>
+							<option value="images">Images</option>
+							<option value="videos">Videos</option>
+							<option value="content">Written content</option>
+							<option value="colors">Color scheme</option>
+							<option value="content">Other... (write in the comment box below)</option>
+						</select>
+					</fieldset>
+					<br>
+					<fieldset>
+						<legend>Any Comments or Suggestions?</legend>
+						<textarea name="comments" id="comments" rows="4" cols="40"></textarea>
+					</fieldset>
+					<br>
+					<input type="submit" id="mySubmit" value="Submit">
+					<input type ="reset" id="myReset" value="Reset">
+				</form>
+			</main>
+			
+		</div> <!-- end of flex container -->
+		
+		<footer>
+			Copyright &copy; 2018 Rachel Ahn | <a href="AhnSiteMap.html">Site Map</a>
+		</footer>
+		
+	</div> <!-- end of wrapper -->
+	
+	<script>
+		alert("Please leave feedback! Thank you!");
+	</script>
+
+</body>
+</html>
